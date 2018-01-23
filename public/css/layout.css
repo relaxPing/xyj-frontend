@@ -1,0 +1,69 @@
+.row.webBody{
+    font-size: 18px;
+}
+.sidenav {
+    background-color: #f1f1f1;
+    /*height: 100%;*/
+    padding: 0px;
+}
+.content{
+    background-color: #fafafa;
+
+    padding: 5px 20px;
+}
+ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    /*border: 1px solid #555;*/
+    /*position: fixed;*/
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    list-style: none;
+}
+li{
+    /*使list前的小圆点消失*/
+    list-style: none;
+    /*缩进效果*/
+    /*margin-left: 15px;*/
+    /*隐藏菜单*/
+    display: none;
+}
+ul a:link,ul a:visited,ul a:hover,ul a:active{
+    text-decoration:none;   /* 指正常的未被访问过的链接*/
+}
+
+ul a{
+    /*文字的显示方式*/
+    display: block;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+ul a.active {
+    background-color: #ff6347;
+    color: white;
+}
+ul a:hover:not(.active) {
+    background-color: #ff6347;
+    color: white;
+}
+ul li a{
+    padding-left: 50px;
+}
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.webBody {height: auto;}
+}
